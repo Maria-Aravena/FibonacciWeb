@@ -1,0 +1,8 @@
+Para el problema en cuestión, implementar la secuencia fibonacci la solución más básica existente consiste en la generación de un ciclo for almacenando los valores de fibonacci correspondientes al numero n y n-1.
+Solución que, a medida de que el valor n incrementase, incrementarían los tiempos de busqueda.
+
+En el segundo caso, al implementar dicha solución en forma recursiva, el problema de dicha solución es la complejidad de la funcion.
+
+Recordando la experiencia previa en ayudantías de "estructuras discretas para ciencias de la computación", se considera que el uso de una ecuación de recurrencia, que es la expresión matemática de una función recurrente, como la forma más eficiente de realizar el calculo de los valores n y n-1 solicitados.
+
+Para lo cual, se realizó una prueba en un archivo excel para determinar la veracidad de la expresión matemática.
