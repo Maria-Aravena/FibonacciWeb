@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<title>Fibonacci</title>
 		<script type="text/javascript">
 			<!-- Inicialización de las funciones-->
 			function fibonacci(){}
-			
-			function validation(){}
+			<!-- Inicio de la validacion de la existencia de un valor numérico en el "input text" del archivo.
+			function validation(){
+				var number= document.getElementById("fibonacci_number").value;
+				if( isNaN(number) || number.length==0){
+					<!-- Validación de que sólo hayan numeros en el cuadro de edad-->
+							alert("Debe introducir un numero");
+							return false;
+						}
+			}
 		</script>
 	</head>
 	<body>
-		<h1> Hello World</h1>
-		<input type="text" name="number" id="fibonacci_number"> 
+		<h1> Valores de la secuencia de Fibonacci: </h1>
+		<br>
+		<h2>	Indique el valor que desea obtener de la secuencia de Fibonacci: <input type="text" name="number" id="fibonacci_number">  </h2> 	
+		
+		<input type="submit" onclick=validation()>
 	</body>
 </html>
