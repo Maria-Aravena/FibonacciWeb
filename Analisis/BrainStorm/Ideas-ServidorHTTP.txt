@@ -1,0 +1,10 @@
+Ideas-ServicioHTTP.
+
+
+-Realizar validaciones:
+ 	Se deberá comprobar que el valor "n" del cual se desea realizar la frecuencia de fibonacci sea un número entero positivo.
+Se deberá impedir que se realicen envios con valores no numéricos.
+
+-La visualización de los valores n y n-1 podría ser un en una ventana emergente que entregue dichos valores.
+
+-Inicialmente se realizará un único archivo html en el cual se implementen tanto el código como las validaciones correspondientes para comprobar la funcionalidad, luego (de ser necesario) se procederá a realizar la separación considerando una arquitectura "MVC".
