@@ -13,11 +13,12 @@
 				var oneMinusSqr= ((1 - raizCinco)/2);
 				
 				var n = oneDivSqr*(Math.pow( onePlusSqr, number) - Math.pow( oneMinusSqr, number));
-				alert(number +"="+ n);
+				//alert(number +"="+ n);
 				var nMinus= number-1;
 				var nMinus1 = oneDivSqr*(Math.pow( onePlusSqr, nMinus) - Math.pow( oneMinusSqr, nMinus));
-				alert(nMinus +"="+ nMinus1);
-				//alert("Los valores obtenidos son: \n " number +"="+ n +"\n" + number-1+ "= "+nMinus1);
+				//alert(nMinus +"="+ nMinus1);
+				alert("A partir del valor "+ number +" se obtuvieron los siguientes valores:\n Posición " +number +": "+ n +" \n Posición " +nMinus +": "+ nMinus1 );
+				
 				
 			}
 			
