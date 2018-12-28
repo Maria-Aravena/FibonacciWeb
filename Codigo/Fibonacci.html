@@ -7,19 +7,20 @@
 			<!-- Inicialización de las funciones-->
 			function fibonacci(){
 				var number = document.getElementById("fibonacci_number").value;
+				var n = equationR_Fibonacci(number);
+				var nMinus= number-1;
+				var nMinus1 = equationR_Fibonacci(nMinus);
+				alert("A partir del valor "+ number +" se obtuvieron los siguientes elementos de la secuencia Fibonacci:\n Posición " +number +": "+ n +" \n Posición " +nMinus +": "+ nMinus1 );
+			}
+			
+			<!-- Implementación de la Ecuación de Recurrencia de Fibonacci -->
+			function equationR_Fibonacci(number){
 				var raizCinco= Math.sqrt(5);
 				var oneDivSqr= (1/raizCinco);
 				var onePlusSqr= ((1 + raizCinco)/2);
 				var oneMinusSqr= ((1 - raizCinco)/2);
-				
 				var n = oneDivSqr*(Math.pow( onePlusSqr, number) - Math.pow( oneMinusSqr, number));
-				//alert(number +"="+ n);
-				var nMinus= number-1;
-				var nMinus1 = oneDivSqr*(Math.pow( onePlusSqr, nMinus) - Math.pow( oneMinusSqr, nMinus));
-				//alert(nMinus +"="+ nMinus1);
-				alert("A partir del valor "+ number +" se obtuvieron los siguientes valores:\n Posición " +number +": "+ n +" \n Posición " +nMinus +": "+ nMinus1 );
-				
-				
+				return  Math.round(n);
 			}
 			
 			<!-- Inicio de la validacion de la existencia de un valor numérico en el "input text" del archivo.
